@@ -7,8 +7,8 @@
 <div align="center">
       <a href="https://www.instagram.com/p/B96mYeZCmiB/?utm_source=ig_web_button_share_sheet">
      <img 
-      src="https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg" 
-      alt="Everything Is AWESOME" 
+      src="https://www.instagram.com/p/B96mYeZCmiB/?utm_source=ig_web_button_share_sheet" 
+      alt="example" 
       style="width:100%;">
       </a>
     </div>
