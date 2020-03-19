@@ -19,12 +19,12 @@ ScenesNames = []
 SceneSources = []
 
 def sourceSwitch(source_name,scene,switch):
-    ws.call(requests.SetSceneItemProperties(source_name,scene,visible=switch))
+    ws.call(requests.SetSceneItemProperties(source_name,scene,visible=switch)) 
 
-def scene_switch(unused_addr, args, filter):
+def scene_switch(unused_addr, args, filter):        
     if filter > 60 :
-        #ws.call(requests.SetCurrentScene(ScenesNames[1]))
-        sourceSwitch("webcam1","Scene1",False)
+        #ws.call(requests.SetCurrentScene(ScenesNames[1]))      # change to scene 2 ( [1] )
+        sourceSwitch("webcam1","Scene1",False)                  # change param example
         sourceSwitch("screen1","Scene1",True)
         sourceSwitch("screen2","Scene1",False)
     elif filter <= 59 :
@@ -36,15 +36,13 @@ def scene_switch(unused_addr, args, filter):
 
 
 if __name__ == "__main__":
-
     try:
         scenes = ws.call(requests.GetSceneList())
 
         for s in scenes.getScenes():
             name = s['name']
-            print(ws.call(requests.GetSourcesList()))
-            print(name)
-            ScenesNames.append(name)
+            print(ws.call(requests.GetSourcesList()))       # Get The list of available sources in each scene in OBS
+            ScenesNames.append(name)                        # Add every scene to a list of scenes
 
         print(ScenesNames)
        
@@ -52,15 +50,12 @@ if __name__ == "__main__":
         parser = argparse.ArgumentParser()
         parser.add_argument("--ip",default="127.0.0.1", help="The ip to listen on")
         parser.add_argument("--port",type=int, default=5005, help="The port to listen on")
-        
-        args = parser.parse_args()
+
+        args = parser.parse_args()                           # parser for --ip --port arguments
         dispatcher = dispatcher.Dispatcher()
 
-        ## OSC LISTENER
-        dispatcher.map("/Scene", scene_switch, "Scene")
-        server = osc_server.ThreadingOSCUDPServer(
-            (args.ip, args.port), dispatcher)
-
+        dispatcher.map("/Scene", scene_switch, "Scene")      # OSC LISTENER
+        server = osc_server.ThreadingOSCUDPServer(args.ip, args.port), dispatcher)
         print("Serving on {}".format(server.server_address))
         
         server.serve_forever()
