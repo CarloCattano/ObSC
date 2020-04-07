@@ -4,4 +4,4 @@
 
  <a href="https://youtu.be/00V3wrOonBU">Example Video</a></p>
 
-[![Watch creative simple example use](https://img.youtube.com/vi/00V3wrOonBU/maxresdefault.jpg)](https://youtu.be/00V3wrOonBU)
+[![Watch creative simple example use](https://img.youtube.com/vi/00V3wrOonBU/hqdefault.jpg)](https://youtu.be/00V3wrOonBU)
