@@ -1,0 +1,3 @@
+obs-websocket-py==0.5.1
+python-osc==1.7.4
+
