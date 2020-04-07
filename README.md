@@ -1,4 +1,4 @@
-# Control [OBS Studio](https://obsproject.com/) with Open Sound Control template example
+# Control [OBS Studio](https://obsproject.com/) with Open Sound Control 
 
 ### Uses [Python-osc](https://pypi.org/project/python-osc/)   
 ### [OBS web socket](https://github.com/Palakis/obs-websocket/releases/tag/4.7.0) and [obs-websocket-py](https://github.com/Elektordi/obs-websocket-py) 
