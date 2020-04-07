@@ -8,11 +8,14 @@
 
 ## Control Obs from any OSC capable app running on the same network :
 ### * the script connects python to obs websocket         on port 4444 in localhost using default credentials ( you might want to change that if you stream :-) 
-### * An osc listener runs on port 5005 and listens for /Scene1 
+
+ * An osc listener runs on port 5005 and listens for /Scene1 
      
-### * It lists all the available scenes to iterate through them 
+ * It lists all the available scenes to iterate through them 
      
-### * A lot of parameters are exposed to the web socket so you can control almost anything in OBS with the right address. For           now I commented out a few lines that ilustrates a way to control individual elements as "webcam1" on "Scene1" on/off switch.
+ * A lot of parameters are exposed to the web socket so you can control almost anything in OBS with the right address. For           now I commented out a few lines that ilustrates a way to control individual elements as "webcam1" on "Scene1" on/off switch.
+ 
+ * Current example switches between two scenes named Scene1 and Scene2 with values from a m4l device sending values from 0 to 127 
     
 ## Will try to develope it futher , and maybe make a GUI with tkinter or similar to learn about it 
     
