@@ -9,7 +9,7 @@
 ## Control Obs from any OSC capable app running on the same network :
 ### * the script connects python to obs websocket         on port 4444 in localhost using default credentials ( you might want to change that if you stream :-) 
 
- * An osc listener runs on port 5005 and listens for /Scene1 
+ * An osc listener runs on port 5005 and listens for /Scene message  
      
  * It lists all the available scenes to iterate through them 
      
