@@ -55,7 +55,7 @@ if __name__ == "__main__":
         dispatcher = dispatcher.Dispatcher()
 
         dispatcher.map("/Scene", scene_switch, "Scene")      # OSC LISTENER
-        server = osc_server.ThreadingOSCUDPServer(args.ip, args.port), dispatcher)
+        server = osc_server.ThreadingOSCUDPServer((args.ip, args.port), dispatcher)  
         print("Serving on {}".format(server.server_address))
         
         server.serve_forever()
@@ -64,3 +64,5 @@ if __name__ == "__main__":
         pass
 
     ws.disconnect()
+
+  
