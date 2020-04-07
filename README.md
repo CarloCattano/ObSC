@@ -4,7 +4,7 @@
 
 [![Watch creative simple example use](https://img.youtube.com/vi/00V3wrOonBU/hqdefault.jpg)](https://youtu.be/00V3wrOonBU)
 
-⋅⋅* Control Obs from any OSC capable app running on the same network :
+## Control Obs from any OSC capable app running on the same network :
 
 ###     In this first example the script connect python to obs websocket on port 4444 in localhost using default credentials ( you might want to change that if you stream :-) 
      
