@@ -4,7 +4,7 @@
 ### [OBS web socket](https://github.com/Palakis/obs-websocket/releases/tag/4.7.0) and [obs-websocket-py](https://github.com/Elektordi/obs-websocket-py) 
 
 
-[Watch creative simple example use](https://img.youtube.com/vi/00V3wrOonBU/hqdefault.jpg)](https://youtu.be/00V3wrOonBU)
+[![Watch creative simple example use](https://img.youtube.com/vi/00V3wrOonBU/hqdefault.jpg)](https://youtu.be/00V3wrOonBU)
 
 ## Control Obs from any OSC capable app running on the same network :
 ### * the script connects python to obs websocket         on port 4444 in localhost using default credentials ( you might want to change that if you stream :-) 
