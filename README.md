@@ -19,7 +19,7 @@
  
  * Current example switches between two scenes named Scene1 and Scene2 with values from a m4l device sending values from 0 to 127 
     
-## Will try to develope it futher , and maybe make a GUI with tkinter or similar to learn about it 
+#### I Will try to develope it futher , and maybe make a GUI with tkinter or similar to learn about it 
     
     
     
