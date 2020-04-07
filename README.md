@@ -3,3 +3,5 @@
 ## Uses [Python-osc](https://pypi.org/project/python-osc/) python3+ and [OBS web socket](https://github.com/Palakis/obs-websocket)
 
  <a href="https://youtu.be/00V3wrOonBU">Example Video</a></p>
+
+[![Watch creative simple example use](https://img.youtube.com/vi/00V3wrOonBU/maxresdefault.jpg)](https://youtu.be/00V3wrOonBU)
