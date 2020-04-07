@@ -21,18 +21,16 @@ SceneSources = []
 def sourceSwitch(source_name,scene,switch):
     ws.call(requests.SetSceneItemProperties(source_name,scene,visible=switch)) 
 
-def scene_switch(unused_addr, args, filter):        
-    if filter > 60 :
-        #ws.call(requests.SetCurrentScene(ScenesNames[1]))      # change to scene 2 ( [1] )
-        sourceSwitch("webcam1","Scene1",False)                  # change param example
-        sourceSwitch("screen1","Scene1",True)
-        sourceSwitch("screen2","Scene1",False)
+def scene_switch(unused_addr, args, filter):  
+       
+    if filter > 60 : # change to scene 2 
+        ws.call(requests.SetCurrentScene(ScenesNames[1]))          
+                                                                    #sourceSwitch("screen1","Scene1",True)   
+                                                                    #sourceSwitch("screen2","Scene1",False)
     elif filter <= 59 :
-        #ws.call(requests.SetCurrentScene(ScenesNames[0]))
-        sourceSwitch("webcam1","Scene1",True)
-        sourceSwitch("screen1","Scene1",False)
-        sourceSwitch("screen2","Scene1",True)
-    print("[{0}] +" " + {1}".format(args[0], filter))    
+        ws.call(requests.SetCurrentScene(ScenesNames[0]))           # COntrol sources by using sourceSwitch("source_Name","Scene_name", bool)
+                                                                    #sourceSwitch("screen1","Scene1",False)
+    print("\n [{0}] +" " + {1}".format(args[0], filter))    
 
 
 if __name__ == "__main__":
@@ -41,10 +39,10 @@ if __name__ == "__main__":
 
         for s in scenes.getScenes():
             name = s['name']
-            print(ws.call(requests.GetSourcesList()))       # Get The list of available sources in each scene in OBS
+            print(ws.call(requests.GetSourcesList()),"\n")       # Get The list of available sources in each scene in OBS
             ScenesNames.append(name)                        # Add every scene to a list of scenes
 
-        print(ScenesNames)
+        print("\n CURRENT SCENES IN OBS" ,ScenesNames)
        
         ### OSC SETTINGS
         parser = argparse.ArgumentParser()
