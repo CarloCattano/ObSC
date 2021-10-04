@@ -23,7 +23,7 @@
     
     
     
-# Stay at home , and spin your streams :-)
+# Stay at home, and spin your streams :-)
     
     
     
